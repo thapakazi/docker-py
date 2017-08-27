@@ -9,6 +9,7 @@ RUN apk add --no-cache --virtual .build-deps \
 	linux-headers \
 	g++ \
 	postgresql-dev \
-	libpq 
+	libpq \
+	bash
 
-CMD ["pip" "--version"]
+CMD ["pip","--version"]
