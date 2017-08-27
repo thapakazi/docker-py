@@ -10,6 +10,8 @@ RUN apk add --no-cache --virtual .build-deps \
 	g++ \
 	postgresql-dev \
 	libpq \
+	git \
+	libxml2-dev libxslt-dev \
 	bash && sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 
 ENV LC_ALL=en_US.UTF-8
