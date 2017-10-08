@@ -17,4 +17,8 @@ RUN apk add --no-cache --virtual .build-deps \
 
 ENV LC_ALL=en_US.UTF-8
 
+# copy the generic requirement
+COPY requirements.txt /tmp
+RUN pip install --requirement /tmp/requirements.txt
+
 CMD ["pip","--version"]

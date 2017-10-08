@@ -1,0 +1,39 @@
+# CORE
+editdistance
+
+# TERMINAL
+tabulate >= 0.7.7
+
+# CACHE
+lxml
+
+# PSQL
+psycopg2
+Flask-SQLAlchemy
+#Flask-Migrate
+#flask-admin
+
+# MONGO
+pymongo
+bson
+json_delta
+
+# FLASK
+flask
+flask-cors
+#flask-httpauth
+
+# DEPLOYMENT
+gunicorn
+
+# GRAPH
+#bokeh
+#python-dateutil
+#MarkupSafe
+#numpy
+#pandas
+#pytz
+
+# ADD YOUR CATAGEORY
+# if necessary
+
