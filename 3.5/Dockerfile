@@ -5,6 +5,7 @@ WORKDIR "/app"
 
 RUN apk add --no-cache --virtual .build-deps \
     	gcc \
+	make \
 	musl-dev \
 	linux-headers \
 	g++ \
