@@ -4,8 +4,8 @@ editdistance
 # TERMINAL
 tabulate >= 0.7.7
 
-# CACHE
-lxml
+# CACHE, will use py-lxml instad from pkg manager
+# lxml
 
 # PSQL
 psycopg2
@@ -14,9 +14,9 @@ Flask-SQLAlchemy
 #flask-admin
 
 # MONGO
-pymongo
-bson
-json_delta
+# pymongo
+# bson
+# json_delta
 
 # FLASK
 flask
@@ -36,4 +36,3 @@ gunicorn
 
 # ADD YOUR CATAGEORY
 # if necessary
-
