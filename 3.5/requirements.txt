@@ -18,9 +18,11 @@ Flask-SQLAlchemy
 # bson
 # json_delta
 
-# FLASK
+# WEB API
 flask
 flask-cors
+wtforms
+WTForms-Alchemy
 #flask-httpauth
 
 # DEPLOYMENT
@@ -30,7 +32,7 @@ gunicorn
 #bokeh
 #python-dateutil
 #MarkupSafe
-#numpy
+numpy
 #pandas
 #pytz
 
