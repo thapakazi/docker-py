@@ -16,7 +16,7 @@ RUN apk add --no-cache --virtual .build-deps \
 
 ENV LC_ALL=en_US.UTF-8
 
-# copy the generic requirement, not deleting it at final though
+# copy the generic requirement
 COPY requirements.txt /tmp
 
 RUN pip install --no-cache-dir --requirement /tmp/requirements.txt
