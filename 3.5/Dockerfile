@@ -19,7 +19,6 @@ ENV LC_ALL=en_US.UTF-8
 # copy the generic requirement, not deleting it at final though
 COPY requirements.txt /tmp
 
-RUN pip install --no-cache-dir --requirement /tmp/requirements.txt \
-    && apk del .build-deps
+RUN pip install --no-cache-dir --requirement /tmp/requirements.txt
 
 CMD ["pip","--version"]
