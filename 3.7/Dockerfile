@@ -20,5 +20,4 @@ ENV LC_ALL=en_US.UTF-8
 COPY requirements.txt /tmp
 
 RUN pip install --no-cache-dir --requirement /tmp/requirements.txt
-
 CMD ["pip","--version"]
