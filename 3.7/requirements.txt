@@ -1,0 +1,33 @@
+# CORE
+editdistance
+
+# TERMINAL
+tabulate >= 0.7.7
+
+# CACHE
+lxml
+
+# WEB API
+flask
+flask-cors
+wtforms
+WTForms-Alchemy
+#flask-httpauth
+
+# DEPLOYMENT
+bjoern
+#gunicorn
+
+# PSQL
+psycopg2-binary
+Flask-SQLAlchemy
+
+
+# MONGO
+pymongo
+bson
+#json_delta
+
+# GRAPH
+numpy
+pandas
