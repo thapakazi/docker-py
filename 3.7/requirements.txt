@@ -5,7 +5,7 @@ editdistance
 tabulate >= 0.7.7
 
 # CACHE
-lxml
+# lxml
 
 # WEB API
 flask
