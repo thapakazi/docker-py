@@ -5,13 +5,13 @@ WORKDIR "/app"
 
 RUN apk add --no-cache --virtual .build-deps \
 	gcc \
-        g++ && \ 
+    g++ && \
     apk add --no-cache --virtual .build-run \
-        postgresql-dev \
+    postgresql-dev \
 	libpq \
-        make \	
+    make \
 	git \
-        py-lxml \
+    py-lxml libev-dev \
 	bash && sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 
 ENV LC_ALL=en_US.UTF-8
