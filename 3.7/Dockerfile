@@ -4,20 +4,21 @@ MAINTAINER thapakazi
 WORKDIR "/app"
 
 RUN apk add --no-cache --virtual .build-deps \
-	gcc \
-    g++ && \
-    apk add --no-cache --virtual .build-run \
-    postgresql-dev \
+        gcc \
+        make \
+        g++ && \
+        apk add --no-cache --virtual .run-deps \
+        postgresql-dev \
 	libpq \
-    make \
-	git openssh-client\
-    py-lxml libev-dev \
-	bash && sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
+        git openssh-client\
+        libev-dev
 
 ENV LC_ALL=en_US.UTF-8
 
 # copy the generic requirement
 COPY requirements.txt /tmp
 
-RUN pip install --no-cache-dir --requirement /tmp/requirements.txt
+RUN pip install --no-cache-dir --requirement /tmp/requirements.txt && apk del .build-deps
+
 CMD ["pip","--version"]
+

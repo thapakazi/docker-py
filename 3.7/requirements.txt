@@ -22,7 +22,6 @@ bjoern
 psycopg2-binary
 Flask-SQLAlchemy
 
-
 # MONGO
 #pymongo
 #bson
