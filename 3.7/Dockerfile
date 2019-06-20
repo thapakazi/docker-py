@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual .build-deps \
     postgresql-dev \
 	libpq \
     make \
-	git \
+	git openssh-client\
     py-lxml libev-dev \
 	bash && sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 
